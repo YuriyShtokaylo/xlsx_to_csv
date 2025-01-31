@@ -1,2 +1,4 @@
 import pandas as pd
-pd.read_excel("convert test5.xlsx").to_csv("test.csv", index=False)
+df = pd.read_excel("convert test5.xlsx")
+print(df)
+df.to_csv("test.csv", index=False, float_format='%.2f')
